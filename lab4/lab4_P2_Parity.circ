@@ -29,8 +29,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </options>
   <mappings>
     <tool lib="6" map="Button2" name="Menu Tool"/>
-    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
     <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
     <tool lib="6" name="Poke Tool"/>
@@ -72,13 +72,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(430,160)" to="(430,190)"/>
     <wire from="(140,100)" to="(180,100)"/>
     <wire from="(260,120)" to="(260,140)"/>
-    <wire from="(140,140)" to="(180,140)"/>
     <wire from="(260,180)" to="(260,200)"/>
+    <wire from="(140,140)" to="(180,140)"/>
     <wire from="(430,230)" to="(430,260)"/>
     <wire from="(140,260)" to="(430,260)"/>
+    <comp lib="0" loc="(140,140)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="5" loc="(570,210)" name="LED">
       <a name="color" val="#3bf000"/>
       <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="1" loc="(350,160)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(140,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="P"/>
+    </comp>
+    <comp lib="1" loc="(530,210)" name="XOR Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(240,200)" name="XOR Gate">
       <a name="inputs" val="2"/>
@@ -86,26 +99,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(140,100)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(350,160)" name="XOR Gate">
+    <comp lib="1" loc="(240,120)" name="XOR Gate">
       <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(530,210)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(140,180)" name="Pin">
-      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(140,220)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(140,260)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="P"/>
-    </comp>
-    <comp lib="1" loc="(240,120)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(140,140)" name="Pin">
+    <comp lib="0" loc="(140,180)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
   </circuit>
